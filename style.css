@@ -1,0 +1,68 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  margin: 20px;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  color: #003366;
+}
+#semestres-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.semestre {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 260px;
+  background-color: #f5f5f5;
+}
+.semestre h2 {
+  text-align: center;
+  color: #004080;
+}
+.curso {
+  margin: 8px 0;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.curso input[type="checkbox"]:disabled + label {
+  color: #999;
+}
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #0055aa;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Colores por tipo de asignatura */
+.curso.BIO, .curso.QUI, .curso.FIS, .curso.MAT {
+  background-color: #e1f5fe; /* Azul claro - Ciencias Básicas */
+}
+.curso.ENF, .curso.FGL, .curso.COM {
+  background-color: #fff8e1; /* Amarillo claro - Formación General */
+}
+.curso.TME {
+  background-color: #e8f5e9; /* Verde claro - Asignaturas de la carrera */
+}
+.curso.INT {
+  background-color: #fce4ec; /* Rosado claro - Internado */
+}
+.curso.ELEC {
+  background-color: #ede7f6; /* Lila claro - Electivos */
+}
